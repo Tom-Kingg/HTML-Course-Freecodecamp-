@@ -13,6 +13,8 @@
     <a href="#html">HTML Section</a>
     <a href="#random">Random Details</a>
     <a href="#Vacations">Vacations to Avoid</a>
+    <a href="#table">My Schedule</a>
+    <a href="#contact">Contact Me</a>
     </nav>
     <h1>Hello World!</h1>
     <hr>
@@ -100,8 +102,65 @@
     </aside>
     <p>Lazy loader will only load image when the use scrolls down to it neaby , til then it won't be loaded if loading type is lazy, meanwhile it would be by default loaded if not written or eager type which is default one.</p>
      </article>
+     <hr>
+
+     <article id = "contact">
+       <h2>Contact Me</h2>
+       <p>I would really love to hear from you!</p>
+       
+       <form action = "https://httpbin.org/get" method="get">
+         <fieldset>
+           <legend>Personal Info</legend>
+         <p><label for="firstname">First Name:</label>
+         <input type="text" name="firstname" id="firstname" placeholder="John" required autofocus>
+         </p>
+         <p>
+         <label for="lastname">Last Name:</label>
+         <input type="text" name="lastname" id="lastname" placeholder="Doe" required >
+         </p>
+         <p>
+         <label for="email">Email:</label>
+         <input type="email" name="email" id="email" placeholder="abc@xyz.com" required >
+         </p>
+         
+         <p>
+         <label for="password">Password:</label>
+         <input type="password" name="password" id="email" placeholder="your secret" required >
+         </p>
+         
+         <p>
+         <label for="phone">Phone:</label>
+         <input type="number" name="phone" id="phone" placeholder="1111111111" pattern="[5-9]{1}[0-9]{9}" required >
+         </p>
+         <p>
+         <label for="favnum">favourite Number(0-999)</label>
+         <input type="number" min="0" max="999" step="1" value = "100">
+         </p>
+         <p>
+           <label for="tea">Favourite Tea</label>
+           <select name="tea" id="tea">
+             <option value="Regular Tea">Regular Tea</option>
+             <option value = "Masala Tea">Masala Tea</option>
+             <option value="Rajwadi Tea">Rajwadi Tea</option>
+           </select>
+         </p>
+           <fieldset>
+           <legend>
+             Share your Message
+           </legend>
+             <label for="message">Your Message</label>
+             <textarea name="message" id="message" cold="30" rows="10" placeholder="type your message here."></textarea>
+         </fieldset>
+         </fieldset>
+        <button type="submit">Submit</button>
+         <button type="submit" formaction="https://httpbin.org/post" formethod="post">Post</button>
+        <button type="reset">Reset</button>
+       </form>
+     </article>
    </main>
+    
     <footer>
+      
     <abbr title="Less than sign">&lt;</abbr>&lt;&lt;&lt;&lt;&copy;<a href="about.hmtl"> Heet </a> &gt;&gt;&gt;&gt;
 
     <hr>
